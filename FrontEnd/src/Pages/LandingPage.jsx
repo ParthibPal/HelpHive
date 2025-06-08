@@ -8,16 +8,15 @@ const LandingPage = () => {
 
   return (
     <div className="landing">
+      {/* Navigation Bar */}
       <nav className="navbar">
-        <div className="logo">HelpHive</div>
-
+        <div className="logo">WorkVerse</div>
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <li><a href="#">Home</a></li>
-          <li><a href="#tasks-section">Tasks</a></li>
-          <li><a href="#post-task-section">Post Task</a></li>
+          <li><a onClick={() => navigate('/home')}>Home</a></li>
+          <li><a href="#jobs-section">Jobs</a></li>
+          <li><a href="#post-job-section">Post Job</a></li>
           <li><a href="/login">Login</a></li>
         </ul>
-
         <div className="burger" onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
           <span></span>
@@ -25,45 +24,50 @@ const LandingPage = () => {
         </div>
       </nav>
 
+      {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Get Local Tasks Done Fast & Easy</h1>
-          <p>Find trusted helpers nearby or post tasks you need done.</p>
-          <button className="cta" onClick={() => navigate('/tasks')}>Browse Tasks</button>
+          <h1>Find Your Dream Job Today</h1>
+          <p>Connect with top employers or post job listings easily.</p>
+          <button className="cta" onClick={() => navigate('/home')}>Explore Jobs</button>
         </div>
       </section>
 
+      {/* Quick Banner */}
       <section className="banner">
-        <p>📌 Post Tasks | 🔍 Find Local Help | 💬 Connect & Collaborate</p>
+        <p>💼 Post Jobs | 🔍 Search Talent | 💬 Hire & Get Hired</p>
       </section>
 
-      <section id="tasks-section" className="features">
-        <div className="feature-card" onClick={() => navigate('/post-task')}>
-          <h3>Post a Task</h3>
-          <p>Need help? Post your local tasks and find skilled helpers.</p>
+      {/* Features Section */}
+      <section id="jobs-section" className="features">
+        <div className="feature-card" onClick={() => navigate('/post-job')}>
+          <h3>Post a Job</h3>
+          <p>Looking to hire? Post job openings and find qualified candidates.</p>
         </div>
-        <div className="feature-card" onClick={() => navigate('/tasks')}>
-          <h3>Find Tasks</h3>
-          <p>Looking for work? Browse available tasks near you.</p>
+        <div className="feature-card" onClick={() => navigate('/home')}>
+          <h3>Search Jobs</h3>
+          <p>Explore thousands of job listings across various industries.</p>
         </div>
         <div className="feature-card">
-          <h3>Trusted Helpers</h3>
-          <p>Connect with verified local helpers in your community.</p>
+          <h3>Top Employers</h3>
+          <p>Connect with trusted and leading companies hiring now.</p>
         </div>
         <div className="feature-card highlight-card">
-          <h3>Task Management</h3>
-          <p>Easily track your posted tasks and ongoing jobs in one place.</p>
+          <h3>Career Management</h3>
+          <p>Track applications, get alerts, and manage your job search in one place.</p>
         </div>
       </section>
 
-      <section id="post-task-section" className="cta-section">
-        <h2>Ready to Simplify Your Tasks?</h2>
-        <p>Join thousands who trust HelpHive to get things done locally.</p>
-        <button className="cta-btn" onClick={() => navigate('/login')}>Create Your Account</button>
+      {/* Call to Action Section */}
+      <section id="post-job-section" className="cta-section">
+        <h2>Ready to Start Your Career Journey?</h2>
+        <p>Join WorkVerse and discover job opportunities tailored to your skills.</p>
+        <button className="cta-btn" onClick={() => navigate('/login')}>Get Started</button>
       </section>
 
+      {/* Footer */}
       <footer className="footer">
-        <p>© 2025 HelpHive. All rights reserved.</p>
+        <p>© 2025 WorkVerse. All rights reserved.</p>
       </footer>
     </div>
   );

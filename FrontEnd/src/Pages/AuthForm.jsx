@@ -35,8 +35,8 @@ const AuthForm = () => {
               <input type="password" placeholder="Password" />
               <select>
                 <option value="">Choose Role</option>
-                <option value="service_provider">Task Poster</option>
-                <option value="resource_giver">Task Helper</option>
+                <option value="service_provider">Job Seeker</option>
+                <option value="resource_giver">Employer</option>
                 <option value="seeker">Admin</option>
               </select>
               <button type="submit">Sign Up</button>
