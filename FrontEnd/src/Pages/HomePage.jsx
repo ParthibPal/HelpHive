@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Search, MapPin, Briefcase, Users, TrendingUp, Star, Clock, DollarSign, Filter, ArrowRight, Building, Award, ChevronDown } from 'lucide-react';
 import "../Css/HomePage.css";
+import AboutUs from './AboutUs';
 const JobPortalHomepage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [location, setLocation] = useState('');
@@ -12,7 +14,7 @@ const JobPortalHomepage = () => {
     users: 0,
     success: 0
   });
-
+  const navigate = useNavigate();
   // Animate stats on mount
   useEffect(() => {
     const targets = { jobs: 15000, companies: 2500, users: 50000, success: 95 };
@@ -133,7 +135,7 @@ const JobPortalHomepage = () => {
           <div className="nav-links">
             <a href="#jobs">Find Jobs</a>
             <a href="#companies">Companies</a>
-            <a href="#about">About</a>
+            <a onClick={() => navigate("/aboutus")}>About</a>
             <a href="#contact">Contact</a>
           </div>
           <div className="nav-buttons">
