@@ -1,0 +1,89 @@
+/* src/Css/AboutUs.css */
+.about-container {
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f9f9f9, #e6ecf3);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 40px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+  }
+  
+  .vision-mission {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 0;
+  }
+  
+  .vision, .mission {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .our-story, .why-choose-us, .team-section, .cta-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .why-choose-us ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .why-choose-us li {
+    padding: 8px 0;
+    font-size: 1.1rem;
+  }
+  
+  .cta-section {
+    text-align: center;
+  }
+  
+  .cta-button {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #1abc9c;
+  }
+  
+  @media (min-width: 768px) {
+    .vision-mission {
+      flex-direction: row;
+    }
+  
+    .vision, .mission {
+      flex: 1;
+    }
+  }
+  
