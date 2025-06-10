@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Search, MapPin, Briefcase, Users, TrendingUp, Star, Clock, DollarSign, Filter, ArrowRight, Building, Award, ChevronDown } from 'lucide-react';
 import "../Css/HomePage.css";
 import AboutUs from './AboutUs';
+import Navbar from '../Components/Navbar';
 const JobPortalHomepage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [location, setLocation] = useState('');
@@ -14,7 +15,6 @@ const JobPortalHomepage = () => {
     users: 0,
     success: 0
   });
-  const navigate = useNavigate();
   // Animate stats on mount
   useEffect(() => {
     const targets = { jobs: 15000, companies: 2500, users: 50000, success: 95 };
@@ -124,27 +124,9 @@ const JobPortalHomepage = () => {
   ];
 
   return (
+    <>
+    <Navbar/>
     <div className="homepage">
-      {/* Navigation */}
-      <nav className="navbar">
-        <div className="nav-container">
-          <div className="nav-brand">
-            <Briefcase className="brand-icon" />
-            <span className="brand-text">WorkVerse</span>
-          </div>
-          <div className="nav-links">
-            <a href="#jobs">Find Jobs</a>
-            <a href="#companies">Companies</a>
-            <a onClick={() => navigate("/aboutus")}>About</a>
-            <a href="#contact">Contact</a>
-          </div>
-          <div className="nav-buttons">
-            <button className="btn-secondary">Sign In</button>
-            <button className="btn-primary">Sign Up</button>
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-background">
@@ -414,6 +396,7 @@ const JobPortalHomepage = () => {
         </div>
       </footer>
     </div>
+    </>
   );
 };
 

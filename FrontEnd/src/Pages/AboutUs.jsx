@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import Navbar from '../Components/Navbar';
 import { 
   Users, Target, Zap, Award, ArrowRight, CheckCircle, Globe, Briefcase, 
   TrendingUp, Star, Shield, Clock, Heart, Lightbulb, Rocket, 
@@ -230,6 +231,8 @@ const AboutUs = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="about-container">
 
       {/* Floating Particles */}
@@ -520,6 +523,7 @@ const AboutUs = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

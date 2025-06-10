@@ -20,7 +20,7 @@
     background: var(--primary-bg);
     color: var(--text-light);
     line-height: 1.6;
-    min-height: 100vh;
+    min-height: 1vh;
     overflow-x: hidden;
   }
   
@@ -28,113 +28,7 @@
     box-sizing: border-box;
   }
   
-  /* Navigation Styles */
-  .homepage .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background: rgba(15, 32, 39, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--glass-border);
-    padding: 1rem 0;
-    transition: all 0.3s ease;
-  }
-  
-  .homepage .nav-container {
-    max-width: 1200px;
-    gap: 2rem;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .homepage .nav-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--gold-light);
-  }
-  
-  .homepage .brand-icon {
-    color: var(--gold-dark);
-  }
-  
-  .homepage .nav-links {
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .homepage .nav-links a {
-    color: var(--text-light);
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    position: relative;
-  }
-  
-  .homepage .nav-links a:hover {
-    color: var(--gold-light);
-  }
-  
-  .homepage .nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--gold-dark);
-    transition: width 0.3s ease;
-  }
-  
-  .homepage .nav-links a:hover::after {
-    width: 100%;
-  }
-  
-  .homepage .nav-buttons {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .homepage .btn-secondary {
-    background: transparent;
-    border: 1px solid var(--glass-border);
-    color: var(--text-light);
-    padding: 0.5rem 1.5rem;
-    border-radius: 8px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .homepage .btn-secondary:hover {
-    background: var(--card-bg);
-    border-color: var(--gold-light);
-    color: var(--gold-light);
-  }
-  
-  .homepage .btn-primary {
-    background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
-    border: none;
-    color: var(--highlight-bg);
-    padding: 0.5rem 1.5rem;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .homepage .btn-primary:hover {
-    background: var(--button-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(252, 210, 159, 0.3);
-  }
+
   
   /* Hero Section */
   .homepage .hero {

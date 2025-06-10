@@ -217,6 +217,7 @@ body, html {
 
   .nav-links.open {
     display: flex;
+    z-index: 3;
   }
 
   .burger {

@@ -1,6 +1,6 @@
 .about-container {
     background: var(--primary-bg);
-    min-height: 100vh;
+    min-height: 120vh;
     color: var(--text-light);
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     overflow-x: hidden;

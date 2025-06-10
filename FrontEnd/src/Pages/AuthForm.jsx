@@ -53,7 +53,7 @@ const AuthForm = () => {
             >
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
-              <button type="submit" onClick={() => navigate("/")}>Sign In</button>
+              <button type="submit" onClick={() => navigate("/home")}>Sign In</button>
             </motion.form>
           )}
         </AnimatePresence>
