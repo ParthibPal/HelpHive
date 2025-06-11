@@ -7,6 +7,7 @@ import {
   Building2, UserCheck, Compass, Coffee, Calendar, MapPin
 } from 'lucide-react';
 import "../Css/AboutUs.css"
+import Footer from '../Components/Footer';
 const AboutUs = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeCard, setActiveCard] = useState(null);
@@ -523,6 +524,7 @@ const AboutUs = () => {
         </div>
       </section>
     </div>
+    <Footer/>
     </>
   );
 };

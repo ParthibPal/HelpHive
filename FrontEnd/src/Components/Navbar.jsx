@@ -19,6 +19,7 @@ const Navbar = () => {
     };
 
     return (
+        <>
         <div className="homepage">
             <nav className="navbar">
                 <div className="nav-container">
@@ -32,12 +33,12 @@ const Navbar = () => {
                         <a onClick={() => navigate("/home")}>Find Jobs</a>
                         <a href="#companies">Companies</a>
                         <button onClick={() => navigate("/aboutus")} className="nav-link-btn">About</button>
-                        <a href="#contact">Contact</a>
+                        <a onClick={() => navigate("/contactus")}>Contact</a>
                     </div>
                     
                     <div className="nav-buttons desktop-nav">
-                        <button className="btn-secondary">Sign In</button>
-                        <button className="btn-primary">Sign Up</button>
+                        <button className="btn-secondary" onClick={()=>navigate('/login')}>Sign In</button>
+                        <button className="btn-primary" onClick={()=>navigate('/login')}>Sign Up</button>
                     </div>
 
                     {/* Mobile Burger Menu Button */}
@@ -62,8 +63,8 @@ const Navbar = () => {
                                 <a href="#contact" onClick={closeMenu}>Contact</a>
                             </div>
                             <div className="mobile-nav-buttons">
-                                <button className="btn-secondary" onClick={closeMenu}>Sign In</button>
-                                <button className="btn-primary" onClick={closeMenu}>Sign Up</button>
+                                <button className="btn-secondary" onClick={()=>navigate('/login')}>Sign In</button>
+                                <button className="btn-primary" onClick={()=>navigate('/login')}>Sign Up</button>
                             </div>
                         </div>
                     </div>
@@ -331,6 +332,7 @@ const Navbar = () => {
                 }
             `}</style>
         </div>
+        </>
     );
 };
 

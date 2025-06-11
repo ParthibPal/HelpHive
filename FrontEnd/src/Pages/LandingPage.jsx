@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../Css/LandingPage.css';
-
 const LandingPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();

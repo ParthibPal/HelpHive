@@ -5,6 +5,7 @@ import Login from './Pages/AuthForm.jsx';
 import Dashboard from './Pages/Dashboard.jsx';
 import HomePage from './Pages/HomePage.jsx';
 import AboutUs from './Pages/AboutUs.jsx';
+import ContactPage from './Pages/ContactPage.jsx';
 function App() {
   return (
     <Routes>
@@ -13,6 +14,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/home" element={<HomePage />} />
       <Route path="/aboutus" element={<AboutUs />} />
+      <Route path="/contactus" element={<ContactPage />} />
     </Routes>
   );
 }
