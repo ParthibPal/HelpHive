@@ -894,12 +894,8 @@ export default function PostJobPage() {
           </div>
 
           {/* Job Preview Panel */}
-                
-          <div className="job-preview-wrapper" style={{
-            display: 'flex',
-            gap: '2rem',
-            alignItems: 'flex-start',
-          }}>
+
+          
           {showPreview && (
             <div style={{
               background: 'var(--card-bg)',
@@ -965,7 +961,7 @@ export default function PostJobPage() {
                     </div>
                   )}
                 </div>
-                
+
                 {formData.description && (
                   <div style={{ marginBottom: '1.5rem' }}>
                     <h5 style={{
@@ -1016,7 +1012,6 @@ export default function PostJobPage() {
                       ))}
                     </div>
                   </div>
-                  
                 )}
 
                 <div style={{
@@ -1067,7 +1062,6 @@ export default function PostJobPage() {
               </div>
             </div>
           )}
-          </div>
         </div>
       </main>
 
@@ -1123,9 +1117,7 @@ export default function PostJobPage() {
       </footer>
 
       {/* CSS Animations */}
-      <style>
-        {`
-      
+      <style>{`
         :root {
           --primary-bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
           --highlight-bg: #2c3e50;
@@ -1150,13 +1142,6 @@ export default function PostJobPage() {
           .grid-responsive {
             grid-template-columns: 1fr !important;
           }
-            .job-preview-wrapper {
-    flex-direction: column;
-  }
-
-  .job-preview-wrapper > div {
-    width: 100%;
-  }
         }
 
         * {
