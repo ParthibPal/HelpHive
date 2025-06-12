@@ -13,7 +13,7 @@ const LandingPage = () => {
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li><a onClick={() => navigate('/home')}>Home</a></li>
           <li><a href="#jobs-section">Jobs</a></li>
-          <li><a href="#post-job-section">Post Job</a></li>
+          <li><a href="#post-job-section" onClick={() => navigate("/postjob")}>Post Job</a></li>
           <li><a href="/login">Login</a></li>
         </ul>
         <div className="burger" onClick={() => setMenuOpen(!menuOpen)}>

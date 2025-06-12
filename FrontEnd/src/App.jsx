@@ -6,6 +6,7 @@ import Dashboard from './Pages/Dashboard.jsx';
 import HomePage from './Pages/HomePage.jsx';
 import AboutUs from './Pages/AboutUs.jsx';
 import ContactPage from './Pages/ContactPage.jsx';
+import PostJobPage from './Pages/PostJobPage.jsx';
 function App() {
   return (
     <Routes>
@@ -15,6 +16,7 @@ function App() {
       <Route path="/home" element={<HomePage />} />
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/contactus" element={<ContactPage />} />
+      <Route path="/postjob" element={<PostJobPage />} />
     </Routes>
   );
 }
