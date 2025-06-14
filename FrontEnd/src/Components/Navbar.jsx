@@ -31,7 +31,7 @@ const Navbar = () => {
                     {/* Desktop Navigation */}
                     <div className="nav-links desktop-nav">
                         <a onClick={() => navigate("/home")}>Find Jobs</a>
-                        <a href="#companies">Companies</a>
+                        <a onClick={() => navigate("/companies")}>Companies</a>
                         <button onClick={() => navigate("/aboutus")} className="nav-link-btn">About</button>
                         <a onClick={() => navigate("/contactus")}>Contact</a>
                     </div>
